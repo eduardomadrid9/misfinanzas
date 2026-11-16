@@ -1,0 +1,59 @@
+MIS FINANZAS — versión para tablet (app web)
+=============================================
+
+Esta carpeta es la app completa. Para usarla en la tablet hay que subirla a internet
+una sola vez (gratis, con GitHub Pages). Después se instala como app y funciona sin internet.
+
+Los datos de quien la use se guardan SOLO en su tablet. Nadie más los ve.
+
+
+PASO 1 — Subirla a GitHub Pages (gratis, ~15 minutos, desde la computadora)
+---------------------------------------------------------------------------
+1. Entra a https://github.com y crea una cuenta (si no tienes).
+2. Arriba a la derecha: "+"  →  "New repository".
+   - Repository name: misfinanzas
+   - Déjalo en "Public"
+   - Dale "Create repository".
+3. En la página que aparece, da clic en "uploading an existing file".
+4. Arrastra TODOS los archivos de esta carpeta (index.html, app.js, core.js,
+   estilos.css, sw.js, manifest.webmanifest y los 3 íconos .png).
+   Abajo dale "Commit changes".
+5. Ve a "Settings" (arriba)  →  "Pages" (menú de la izquierda).
+   - En "Branch" elige "main" y la carpeta "/ (root)", dale "Save".
+6. Espera 1–2 minutos y recarga esa página. Arriba saldrá la dirección, algo como:
+      https://TU-USUARIO.github.io/misfinanzas/
+   Esa es la dirección de la app.
+
+
+PASO 2 — Instalarla en la tablet (como app, sin APK)
+----------------------------------------------------
+1. En la tablet abre Chrome y entra a la dirección del paso 1.
+2. Toca los tres puntitos (⋮)  →  "Instalar app"  (o "Agregar a pantalla de inicio").
+3. Listo: aparece el ícono verde "Mis Finanzas". Se abre a pantalla completa
+   y funciona sin internet.
+
+
+PASO 3 (opcional) — Hacer el APK de verdad
+------------------------------------------
+1. En la computadora entra a https://www.pwabuilder.com
+2. Pega la dirección del paso 1 y dale "Start".
+3. Dale "Package For Stores"  →  "Android"  →  "Generate Package".
+4. Descarga el .zip. Adentro viene el archivo .apk.
+5. Pásalo a la tablet (por cable, WhatsApp, Drive…) y ábrelo.
+   Android te pedirá permiso para "instalar apps de origen desconocido": dale permitir.
+6. Para quitar la barrita de dirección que a veces aparece arriba: en el .zip
+   viene un archivo "assetlinks.json". En tu repositorio de GitHub crea la carpeta
+   ".well-known" y sube ahí ese archivo (queda: .well-known/assetlinks.json).
+
+
+ACTUALIZACIONES
+---------------
+Si te mando una versión nueva, solo vuelve a subir los archivos al mismo repositorio
+de GitHub (reemplazándolos). La app de la tablet se actualiza sola la siguiente vez
+que se abra con internet. Los datos no se pierden.
+
+
+RESPALDOS
+---------
+En la app: Ajustes  →  "Exportar respaldo" descarga un archivo con todos los datos.
+Si se borra la app o los datos de Chrome, con "Importar respaldo" se recuperan.
